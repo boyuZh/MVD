@@ -1,0 +1,68 @@
+[2023-11-14 21:11:04,035] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+language_dict:  {'Python': 1, 'TypeScript': 2, 'Java': 3, 'CS': 4, 'CCPP': 5, 'JavaScript': 6}
+language_dict:  {'Python': 1, 'TypeScript': 2, 'Java': 3, 'CS': 4, 'CCPP': 5, 'JavaScript': 6}
+label_freq {0: 169505, 1: 781, 2: 153, 3: 809, 4: 310, 5: 6272, 6: 2963}
+(22599, 7) (22599,)
+(22599, 7) (22599,)
+(22599, 7) (22599,)
+(22599, 7) (22599,)
+(22599, 7) (22599,)
+(22599, 7) (22599,)
+(22599, 7) (22599,)
+(22599, 7) (22599,)
+(22599, 7) (22599,)
+(22599, 7) (22599,)
+language_dict:  {'Python': 1, 'TypeScript': 2, 'Java': 3, 'CS': 4, 'CCPP': 5, 'JavaScript': 6}
+best_threshold for Python:  0.8852
+best_f1 for Python:  0.8667
+best_recall:  0.7647
+best_precision:  1.0
+***** Python Test results *****
+{'Python_accuracy': 0.9817567567567568, 'Python_ap': 0.8443584930188698, 'Python_recall': array([0.99782293, 0.76470588]), 'Python_precision': array([0.98284489, 0.96296296]), 'Python_f1': array([0.99027728, 0.85245902]), 'Python_threshold': 0.8852, 'Python_mcc': 0.8492383292794651, 'Python_cm': array([[1375,    3],
+       [  24,   78]])}
+best_threshold for TypeScript:  0.2014
+best_f1 for TypeScript:  0.3784
+best_recall:  0.6087
+best_precision:  0.2745
+***** TypeScript Test results *****
+{'TypeScript_accuracy': 0.9045454545454545, 'TypeScript_ap': 0.30094446074028286, 'TypeScript_recall': array([0.99492386, 0.13043478]), 'TypeScript_precision': array([0.90740741, 0.75      ]), 'TypeScript_f1': array([0.94915254, 0.22222222]), 'TypeScript_threshold': 0.2014, 'TypeScript_mcc': 0.28707437857098134, 'TypeScript_cm': array([[196,   1],
+       [ 20,   3]])}
+best_threshold for Java:  0.6744
+best_f1 for Java:  0.4127
+best_recall:  0.2737
+best_precision:  0.8387
+***** Java Test results *****
+{'Java_accuracy': 0.9347826086956522, 'Java_ap': 0.47040705632489616, 'Java_recall': array([0.98046582, 0.29473684]), 'Java_precision': array([0.95116618, 0.51851852]), 'Java_f1': array([0.96559378, 0.37583893]), 'Java_threshold': 0.6744, 'Java_mcc': 0.35952535004574604, 'Java_cm': array([[1305,   26],
+       [  67,   28]])}
+best_threshold for CS:  0.1285
+best_f1 for CS:  0.7111
+best_recall:  0.6531
+best_precision:  0.7805
+***** CS Test results *****
+{'CS_accuracy': 0.8622222222222222, 'CS_ap': 0.7733820276514636, 'CS_recall': array([0.99431818, 0.3877551 ]), 'CS_precision': array([0.85365854, 0.95      ]), 'CS_f1': array([0.91863517, 0.55072464]), 'CS_threshold': 0.1285, 'CS_mcc': 0.5541267510006059, 'CS_cm': array([[175,   1],
+       [ 30,  19]])}
+best_threshold for CCPP:  0.3617
+best_f1 for CCPP:  0.3502
+best_recall:  0.332
+best_precision:  0.3706
+***** CCPP Test results *****
+{'CCPP_accuracy': 0.954116413214473, 'CCPP_ap': 0.3526190602819053, 'CCPP_recall': array([0.99441264, 0.18445323]), 'CCPP_precision': array([0.9588294 , 0.63348416]), 'CCPP_f1': array([0.9762969 , 0.28571429]), 'CCPP_threshold': 0.3617, 'CCPP_mcc': 0.3254914399038471, 'CCPP_cm': array([[14416,    81],
+       [  619,   140]])}
+best_threshold for JavaScript:  0.3102
+best_f1 for JavaScript:  0.4773
+best_recall:  0.4589
+best_precision:  0.4973
+***** JavaScript Test results *****
+{'JavaScript_accuracy': 0.9161031805659905, 'JavaScript_ap': 0.5179476107330523, 'JavaScript_recall': array([0.98691537, 0.28179551]), 'JavaScript_precision': array([0.92486303, 0.70625   ]), 'JavaScript_f1': array([0.95488215, 0.40285205]), 'JavaScript_threshold': 0.3102, 'JavaScript_mcc': 0.4118093457838905, 'JavaScript_cm': array([[3545,   47],
+       [ 288,  113]])}
++------------+---------------------+---------------------+--------------------+---------------------+
+|  Language  |          AP         |          F1         |     Precision      |        Recall       |
++------------+---------------------+---------------------+--------------------+---------------------+
+|   Python   |  0.8440879320259299 |  0.8524590163934426 | 0.9629629629629629 |  0.7647058823529411 |
+| TypeScript | 0.22666681831581587 | 0.15384615384615383 | 0.6666666666666666 | 0.08695652173913043 |
+|    Java    | 0.46984698601535685 |  0.3758389261744966 | 0.5185185185185185 | 0.29473684210526313 |
+|     CS     |  0.7679850556611221 |  0.5507246376811594 |        0.95        |  0.3877551020408163 |
+|    CCPP    |  0.3525676062944238 |  0.2857142857142857 | 0.6334841628959276 |  0.1844532279314888 |
+| JavaScript |  0.5148473233875028 |  0.4028520499108735 |      0.70625       |  0.2817955112219451 |
++------------+---------------------+---------------------+--------------------+---------------------+
+22600 22600 22600 22600

@@ -1,0 +1,50 @@
+[2023-09-20 16:55:03,191] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+language_dict:  {'Python': 1, 'TypeScript': 2, 'Java': 3, 'CS': 4, 'CCPP': 5, 'JavaScript': 6}
+language_dict:  {'Python': 1, 'TypeScript': 2, 'Java': 3, 'CS': 4, 'CCPP': 5, 'JavaScript': 6}
+label_freq {0: 169458, 1: 779, 2: 151, 3: 789, 4: 332, 5: 6311, 6: 2969}
+(22600, 7) (22600,)
+(22600, 7) (22600,)
+(22600, 7) (22600,)
+(22600, 7) (22600,)
+(22600, 7) (22600,)
+(22600, 7) (22600,)
+(22600, 7) (22600,)
+(22600, 7) (22600,)
+(22600, 7) (22600,)
+(22600, 7) (22600,)
+language_dict:  {'Python': 1, 'TypeScript': 2, 'Java': 3, 'CS': 4, 'CCPP': 5, 'JavaScript': 6}
+best_threshold for Python:  0.9992
+best_f1 for Python:  0.8783
+best_recall:  0.783
+best_precision:  1.0
+best_threshold for TypeScript:  0.0015
+best_f1 for TypeScript:  0.3871
+best_recall:  0.6667
+best_precision:  0.2727
+best_threshold for Java:  0.0026
+best_f1 for Java:  0.3706
+best_recall:  0.5577
+best_precision:  0.2775
+best_threshold for CS:  0.0094
+best_f1 for CS:  0.7907
+best_recall:  0.7391
+best_precision:  0.85
+best_threshold for CCPP:  0.0163
+best_f1 for CCPP:  0.3104
+best_recall:  0.3963
+best_precision:  0.2552
+best_threshold for JavaScript:  0.1037
+best_f1 for JavaScript:  0.4921
+best_recall:  0.4672
+best_precision:  0.5198
++------------+---------------------+---------------------+---------------------+---------------------+
+|  Language  |          AP         |          F1         |      Precision      |        Recall       |
++------------+---------------------+---------------------+---------------------+---------------------+
+|   Python   |  0.845825925997114  |  0.8512820512820514 |  0.9325842696629213 |  0.7830188679245284 |
+| TypeScript |  0.2768422005219163 | 0.27586206896551724 | 0.36363636363636365 |  0.2222222222222222 |
+|    Java    |  0.3864822228053193 |  0.3389830508474576 |  0.410958904109589  | 0.28846153846153844 |
+|     CS     |  0.7103862693164882 |  0.7200000000000001 |  0.9310344827586207 |  0.5869565217391305 |
+|    CCPP    | 0.30297233139021257 | 0.25702811244979923 |  0.367816091954023  | 0.19753086419753085 |
+| JavaScript |  0.5381929298673359 |  0.4768211920529801 |  0.6050420168067226 | 0.39344262295081966 |
++------------+---------------------+---------------------+---------------------+---------------------+
+22603 22603 22603 22603

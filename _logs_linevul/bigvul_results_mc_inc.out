@@ -1,0 +1,5 @@
+
+
+
+[2023-11-15 08:02:30,380] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2023-11-15 08:02:37,821] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)

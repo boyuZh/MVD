@@ -1,0 +1,59 @@
+[2023-11-14 16:21:08,862] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(data_file='/hpcfs/users/a1232991/Data/CVESingle/CVEALL.csv', output_dir='./saved_models/ourBin/seed9406', model_type='roberta', block_size=512, model_name='model.bin', model_name_or_path='microsoft/codebert-base', config_name='', use_non_pretrained_model=False, tokenizer_name='microsoft/codebert-base', code_length=256, post_adjust=False, do_train=True, do_eval=False, do_test=True, debug=False, evaluate_during_training=True, do_local_explanation=False, reasoning_method=None, train_batch_size=16, eval_batch_size=16, gradient_accumulation_steps=1, learning_rate=2e-05, weight_decay=0.0, adam_epsilon=1e-08, max_grad_norm=1.0, max_steps=-1, warmup_steps=0, seed=9406, epochs=10, language='Python,TypeScript,Java,CS,CCPP,JavaScript', resume=None, effort_at_top_k=0.2, top_k_recall_by_lines=0.01, top_k_recall_by_pred_prob=0.2, do_sorting_by_line_scores=False, do_sorting_by_pred_prob=False, logits_adjust=False, top_k_constant=10, num_attention_heads=12, write_raw_preds=False, use_word_level_tokenizer=False, use_non_pretrained_tokenizer=False, n_gpu=1, device=device(type='cuda'))
+best_threshold for Python:  0.9571
+best_f1 for Python:  0.8508
+best_recall:  0.7549
+best_precision:  0.9747
+***** Python Test results *****
+{'Python_accuracy': 0.9804054054054054, 'Python_ap': 0.8399843730067218, 'Python_recall': array([0.99709724, 0.75490196]), 'Python_precision': array([0.98213009, 0.95061728]), 'Python_f1': array([0.98955708, 0.84153005]), 'Python_threshold': 0.9571, 'Python_mcc': 0.8375113636024268, 'Python_cm': array([[1374,    4],
+       [  25,   77]])}
+best_threshold for TypeScript:  0.0144
+best_f1 for TypeScript:  0.3077
+best_recall:  0.6087
+best_precision:  0.2059
+***** TypeScript Test results *****
+{'TypeScript_accuracy': 0.8909090909090909, 'TypeScript_ap': 0.26366335878099867, 'TypeScript_recall': array([0.98477157, 0.08695652]), 'TypeScript_precision': array([0.90232558, 0.4       ]), 'TypeScript_f1': array([0.94174757, 0.14285714]), 'TypeScript_threshold': 0.0144, 'TypeScript_mcc': 0.14725908504065663, 'TypeScript_cm': array([[194,   3],
+       [ 21,   2]])}
+best_threshold for Java:  0.7645
+best_f1 for Java:  0.4065
+best_recall:  0.2632
+best_precision:  0.8929
+***** Java Test results *****
+{'Java_accuracy': 0.9446002805049089, 'Java_ap': 0.39325829538907275, 'Java_recall': array([0.99323817, 0.26315789]), 'Java_precision': array([0.94971264, 0.73529412]), 'Java_f1': array([0.97098788, 0.3875969 ]), 'Java_threshold': 0.7645, 'Java_mcc': 0.4190859526688238, 'Java_cm': array([[1322,    9],
+       [  70,   25]])}
+best_threshold for CS:  0.2876
+best_f1 for CS:  0.5385
+best_recall:  0.4286
+best_precision:  0.7241
+***** CS Test results *****
+{'CS_accuracy': 0.8444444444444444, 'CS_ap': 0.631388794446468, 'CS_recall': array([0.97727273, 0.36734694]), 'CS_precision': array([0.84729064, 0.81818182]), 'CS_f1': array([0.90765172, 0.50704225]), 'CS_threshold': 0.2876, 'CS_mcc': 0.4788892319093514, 'CS_cm': array([[172,   4],
+       [ 31,  18]])}
+best_threshold for CCPP:  0.0794
+best_f1 for CCPP:  0.3291
+best_recall:  0.3057
+best_precision:  0.3564
+***** CCPP Test results *****
+{'CCPP_accuracy': 0.954116413214473, 'CCPP_ap': 0.31886175454508525, 'CCPP_recall': array([0.99441264, 0.18445323]), 'CCPP_precision': array([0.9588294 , 0.63348416]), 'CCPP_f1': array([0.9762969 , 0.28571429]), 'CCPP_threshold': 0.0794, 'CCPP_mcc': 0.3254914399038471, 'CCPP_cm': array([[14416,    81],
+       [  619,   140]])}
+best_threshold for JavaScript:  0.1971
+best_f1 for JavaScript:  0.4698
+best_recall:  0.4165
+best_precision:  0.5387
+***** JavaScript Test results *****
+{'JavaScript_accuracy': 0.916854495366892, 'JavaScript_ap': 0.5020788774721794, 'JavaScript_recall': array([0.98552339, 0.30174564]), 'JavaScript_precision': array([0.92670157, 0.69942197]), 'JavaScript_f1': array([0.95520777, 0.42160279]), 'JavaScript_threshold': 0.1971, 'JavaScript_mcc': 0.4241059954108239, 'JavaScript_cm': array([[3540,   52],
+       [ 280,  121]])}
+best_threshol:  0.1296
+best_f1 for:  0.4127
+best_recall:  0.3632
+best_precision:  0.4779
+***** Test results *****
+  %s = %s test_accuracy 0.9469
+  %s = %s test_ap 0.4382
+  %s = %s test_cm [[21018   153]
+ [ 1046   383]]
+  %s = %s test_f1 0.3898
+  %s = %s test_mcc 0.4171
+  %s = %s test_precision 0.7146
+  %s = %s test_recall 0.268
+  %s = %s test_threshold 0.1296
+22600 22600 22600 22600

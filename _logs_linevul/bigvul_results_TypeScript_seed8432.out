@@ -1,0 +1,27 @@
+
+
+[2023-11-16 05:22:54,259] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(data_file='/hpcfs/users/a1232991/Data/CVESingle/CVEALL.csv', output_dir='./saved_models/ourTypeScript/seed8432', model_type='roberta', block_size=512, model_name='model.bin', model_name_or_path='microsoft/codebert-base', config_name='', use_non_pretrained_model=False, tokenizer_name='microsoft/codebert-base', code_length=256, post_adjust=False, do_train=True, do_eval=False, do_test=True, debug=False, evaluate_during_training=True, do_local_explanation=False, reasoning_method=None, train_batch_size=16, eval_batch_size=16, gradient_accumulation_steps=1, learning_rate=2e-05, weight_decay=0.0, adam_epsilon=1e-08, max_grad_norm=1.0, max_steps=-1, warmup_steps=0, seed=8432, epochs=10, language='TypeScript', resume=None, effort_at_top_k=0.2, top_k_recall_by_lines=0.01, top_k_recall_by_pred_prob=0.2, do_sorting_by_line_scores=False, do_sorting_by_pred_prob=False, logits_adjust=False, top_k_constant=10, num_attention_heads=12, write_raw_preds=False, use_word_level_tokenizer=False, use_non_pretrained_tokenizer=False, n_gpu=1, device=device(type='cuda'))
+best_threshold for TypeScript:  0.0014
+best_f1 for TypeScript:  0.2857
+best_recall:  0.5
+best_precision:  0.2
+***** TypeScript Test results *****
+{'TypeScript_accuracy': 0.8893805309734514, 'TypeScript_ap': 0.1669040767083516, 'TypeScript_recall': array([0.93396226, 0.21428571]), 'TypeScript_precision': array([0.94736842, 0.17647059]), 'TypeScript_f1': array([0.94061758, 0.19354839]), 'TypeScript_threshold': 0.0014, 'TypeScript_mcc': 0.13549495480841145, 'TypeScript_cm': array([[198,  14],
+       [ 11,   3]])}
+best_threshol:  0.0014
+best_f1 for:  0.2857
+best_recall:  0.5
+best_precision:  0.2
+***** Test results *****
+  %s = %s test_accuracy 0.8894
+  %s = %s test_ap 0.1669
+  %s = %s test_cm [[198  14]
+ [ 11   3]]
+  %s = %s test_f1 0.1935
+  %s = %s test_mcc 0.1355
+  %s = %s test_precision 0.1765
+  %s = %s test_recall 0.2143
+  %s = %s test_threshold 0.0014
+226 226 226 226
+[2023-11-16 05:30:40,089] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)

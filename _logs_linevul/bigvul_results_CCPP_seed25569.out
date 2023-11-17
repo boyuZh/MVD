@@ -1,0 +1,76 @@
+[2023-11-16 20:00:13,524] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(data_file='/hpcfs/users/a1232991/Data/CVESingle/CVEALL.csv', output_dir='./saved_models/ourCCPP/seed25569', model_type='roberta', block_size=512, model_name='model.bin', model_name_or_path='microsoft/codebert-base', config_name='', use_non_pretrained_model=False, tokenizer_name='microsoft/codebert-base', code_length=256, post_adjust=False, do_train=True, do_eval=False, do_test=True, debug=False, evaluate_during_training=True, do_local_explanation=False, reasoning_method=None, train_batch_size=16, eval_batch_size=16, gradient_accumulation_steps=1, learning_rate=2e-05, weight_decay=0.0, adam_epsilon=1e-08, max_grad_norm=1.0, max_steps=-1, warmup_steps=0, seed=25569, epochs=10, language='CCPP', resume=None, effort_at_top_k=0.2, top_k_recall_by_lines=0.01, top_k_recall_by_pred_prob=0.2, do_sorting_by_line_scores=False, do_sorting_by_pred_prob=False, logits_adjust=False, top_k_constant=10, num_attention_heads=12, write_raw_preds=False, use_word_level_tokenizer=False, use_non_pretrained_tokenizer=False, n_gpu=1, device=device(type='cuda'))
+best_threshold for CCPP:  0.1047
+best_f1 for CCPP:  0.2839
+best_recall:  0.4054
+best_precision:  0.2184
+***** CCPP Test results *****
+{'CCPP_accuracy': 0.9532997579959448, 'CCPP_ap': 0.28084985534226264, 'CCPP_recall': array([0.99931115, 0.0880829 ]), 'CCPP_precision': array([0.9537177 , 0.87179487]), 'CCPP_f1': array([0.97598224, 0.16      ]), 'CCPP_threshold': 0.1047, 'CCPP_mcc': 0.26859800939191675, 'CCPP_cm': array([[14507,    10],
+       [  704,    68]])}
+best_threshol:  0.1047
+best_f1 for:  0.2839
+best_recall:  0.4054
+best_precision:  0.2184
+***** Test results *****
+  %s = %s test_accuracy 0.9533
+  %s = %s test_ap 0.2808
+  %s = %s test_cm [[14507    10]
+ [  704    68]]
+  %s = %s test_f1 0.16
+  %s = %s test_mcc 0.2686
+  %s = %s test_precision 0.8718
+  %s = %s test_recall 0.0881
+  %s = %s test_threshold 0.1047
+15289 15289 15289 15289
+[2023-11-17 04:03:30,065] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(data_file='/hpcfs/users/a1232991/Data/CVESingle/CVEALL.csv', output_dir='./saved_models/ourCCPP/seed25569', model_type='roberta', block_size=512, model_name='model.bin', model_name_or_path='microsoft/codebert-base', config_name='', use_non_pretrained_model=False, tokenizer_name='microsoft/codebert-base', code_length=256, post_adjust=False, do_train=False, do_eval=False, do_test=True, debug=False, evaluate_during_training=True, do_local_explanation=False, reasoning_method=None, train_batch_size=16, eval_batch_size=16, gradient_accumulation_steps=1, learning_rate=2e-05, weight_decay=0.0, adam_epsilon=1e-08, max_grad_norm=1.0, max_steps=-1, warmup_steps=0, seed=25569, epochs=10, language='Python,TypeScript,Java,CS,JavaScript', resume=None, effort_at_top_k=0.2, top_k_recall_by_lines=0.01, top_k_recall_by_pred_prob=0.2, do_sorting_by_line_scores=False, do_sorting_by_pred_prob=False, logits_adjust=False, top_k_constant=10, num_attention_heads=12, write_raw_preds=False, use_word_level_tokenizer=False, use_non_pretrained_tokenizer=False, n_gpu=1, device=device(type='cuda'))
+best_threshold for Python:  0.0556
+best_f1 for Python:  0.2096
+best_recall:  0.3663
+best_precision:  0.1468
+***** Python Test results *****
+{'Python_accuracy': 0.9320323014804845, 'Python_ap': 0.1348584787144096, 'Python_recall': array([1., 0.]), 'Python_precision': array([0.9320323, 0.       ]), 'Python_f1': array([0.96482062, 0.        ]), 'Python_threshold': 0.0556, 'Python_mcc': 0.0, 'Python_cm': array([[1385,    0],
+       [ 101,    0]])}
+best_threshold for TypeScript:  0.0853
+best_f1 for TypeScript:  0.3571
+best_recall:  0.2632
+best_precision:  0.5556
+***** TypeScript Test results *****
+{'TypeScript_accuracy': 0.936, 'TypeScript_ap': 0.3375122445268788, 'TypeScript_recall': array([1.        , 0.15789474]), 'TypeScript_precision': array([0.93522267, 1.        ]), 'TypeScript_f1': array([0.9665272 , 0.27272727]), 'TypeScript_threshold': 0.0853, 'TypeScript_mcc': 0.3842743000701953, 'TypeScript_cm': array([[231,   0],
+       [ 16,   3]])}
+best_threshold for Java:  0.0389
+best_f1 for Java:  0.2676
+best_recall:  0.4419
+best_precision:  0.1919
+***** Java Test results *****
+{'Java_accuracy': 0.9428571428571428, 'Java_ap': 0.2228339878220425, 'Java_recall': array([0.99851742, 0.06976744]), 'Java_precision': array([0.94393833, 0.75      ]), 'Java_f1': array([0.9704611 , 0.12765957]), 'Java_threshold': 0.0389, 'Java_mcc': 0.21768206946748422, 'Java_cm': array([[1347,    2],
+       [  80,    6]])}
+best_threshold for CS:  0.0286
+best_f1 for CS:  0.4286
+best_recall:  0.4565
+best_precision:  0.4038
+***** CS Test results *****
+{'CS_accuracy': 0.7961165048543689, 'CS_ap': 0.4418171153319237, 'CS_recall': array([1.        , 0.08695652]), 'CS_precision': array([0.79207921, 1.        ]), 'CS_f1': array([0.8839779, 0.16     ]), 'CS_threshold': 0.0286, 'CS_mcc': 0.26244323741083053, 'CS_cm': array([[160,   0],
+       [ 42,   4]])}
+best_threshold for JavaScript:  0.0727
+best_f1 for JavaScript:  0.2782
+best_recall:  0.3773
+best_precision:  0.2203
+***** JavaScript Test results *****
+{'JavaScript_accuracy': 0.9089984748347738, 'JavaScript_ap': 0.2409992885666633, 'JavaScript_recall': array([0.99943741, 0.06068602]), 'JavaScript_precision': array([0.90892811, 0.92      ]), 'JavaScript_f1': array([0.95203644, 0.11386139]), 'JavaScript_threshold': 0.0727, 'JavaScript_mcc': 0.2232442602959146, 'JavaScript_cm': array([[3553,    2],
+       [ 356,   23]])}
+best_threshol:  0.0735
+best_f1 for:  0.2538
+best_recall:  0.2932
+best_precision:  0.2237
+***** Test results *****
+  %s = %s test_accuracy 0.9181
+  %s = %s test_ap 0.2248
+  %s = %s test_cm [[6676    4]
+ [ 595   36]]
+  %s = %s test_f1 0.1073
+  %s = %s test_mcc 0.2149
+  %s = %s test_precision 0.9
+  %s = %s test_recall 0.0571
+  %s = %s test_threshold 0.0735
+7311 7311 7311 7311

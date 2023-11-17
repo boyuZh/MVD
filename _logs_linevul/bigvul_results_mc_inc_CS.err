@@ -1,0 +1,2 @@
+11/16/2023 17:11:37 - WARNING - __main__ -   device: cuda, n_gpu: 1
+slurmstepd: error: *** JOB 1353524 ON p2-gpu-38 CANCELLED AT 2023-11-16T17:12:41 ***

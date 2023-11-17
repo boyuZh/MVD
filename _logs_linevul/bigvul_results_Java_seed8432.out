@@ -1,0 +1,27 @@
+
+
+[2023-11-16 05:31:55,161] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(data_file='/hpcfs/users/a1232991/Data/CVESingle/CVEALL.csv', output_dir='./saved_models/ourJava/seed8432', model_type='roberta', block_size=512, model_name='model.bin', model_name_or_path='microsoft/codebert-base', config_name='', use_non_pretrained_model=False, tokenizer_name='microsoft/codebert-base', code_length=256, post_adjust=False, do_train=True, do_eval=False, do_test=True, debug=False, evaluate_during_training=True, do_local_explanation=False, reasoning_method=None, train_batch_size=16, eval_batch_size=16, gradient_accumulation_steps=1, learning_rate=2e-05, weight_decay=0.0, adam_epsilon=1e-08, max_grad_norm=1.0, max_steps=-1, warmup_steps=0, seed=8432, epochs=10, language='Java', resume=None, effort_at_top_k=0.2, top_k_recall_by_lines=0.01, top_k_recall_by_pred_prob=0.2, do_sorting_by_line_scores=False, do_sorting_by_pred_prob=False, logits_adjust=False, top_k_constant=10, num_attention_heads=12, write_raw_preds=False, use_word_level_tokenizer=False, use_non_pretrained_tokenizer=False, n_gpu=1, device=device(type='cuda'))
+best_threshold for Java:  0.0014
+best_f1 for Java:  0.374
+best_recall:  0.5104
+best_precision:  0.2952
+***** Java Test results *****
+{'Java_accuracy': 0.9126145172656801, 'Java_ap': 0.34146652537801414, 'Java_recall': array([0.96145125, 0.23958333]), 'Java_precision': array([0.94572491, 0.31081081]), 'Java_f1': array([0.95352324, 0.27058824]), 'Java_threshold': 0.0014, 'Java_mcc': 0.22709590578823005, 'Java_cm': array([[1272,   51],
+       [  73,   23]])}
+best_threshol:  0.0014
+best_f1 for:  0.374
+best_recall:  0.5104
+best_precision:  0.2952
+***** Test results *****
+  %s = %s test_accuracy 0.9126
+  %s = %s test_ap 0.3415
+  %s = %s test_cm [[1272   51]
+ [  73   23]]
+  %s = %s test_f1 0.2706
+  %s = %s test_mcc 0.2271
+  %s = %s test_precision 0.3108
+  %s = %s test_recall 0.2396
+  %s = %s test_threshold 0.0014
+1419 1419 1419 1419
+[2023-11-16 06:16:36,459] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)

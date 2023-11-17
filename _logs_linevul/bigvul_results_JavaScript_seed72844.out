@@ -1,0 +1,27 @@
+
+
+[2023-11-16 04:19:49,596] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(data_file='/hpcfs/users/a1232991/Data/CVESingle/CVEALL.csv', output_dir='./saved_models/ourJavaScript/seed72844', model_type='roberta', block_size=512, model_name='model.bin', model_name_or_path='microsoft/codebert-base', config_name='', use_non_pretrained_model=False, tokenizer_name='microsoft/codebert-base', code_length=256, post_adjust=False, do_train=True, do_eval=False, do_test=True, debug=False, evaluate_during_training=True, do_local_explanation=False, reasoning_method=None, train_batch_size=16, eval_batch_size=16, gradient_accumulation_steps=1, learning_rate=2e-05, weight_decay=0.0, adam_epsilon=1e-08, max_grad_norm=1.0, max_steps=-1, warmup_steps=0, seed=72844, epochs=10, language='JavaScript', resume=None, effort_at_top_k=0.2, top_k_recall_by_lines=0.01, top_k_recall_by_pred_prob=0.2, do_sorting_by_line_scores=False, do_sorting_by_pred_prob=False, logits_adjust=False, top_k_constant=10, num_attention_heads=12, write_raw_preds=False, use_word_level_tokenizer=False, use_non_pretrained_tokenizer=False, n_gpu=1, device=device(type='cuda'))
+best_threshold for JavaScript:  0.5579
+best_f1 for JavaScript:  0.5034
+best_recall:  0.4778
+best_precision:  0.532
+***** JavaScript Test results *****
+{'JavaScript_accuracy': 0.9043589743589744, 'JavaScript_ap': 0.5695741192331277, 'JavaScript_recall': array([0.95052602, 0.48041775]), 'JavaScript_precision': array([0.94381705, 0.51396648]), 'JavaScript_f1': array([0.94715965, 0.49662618]), 'JavaScript_threshold': 0.5579, 'JavaScript_mcc': 0.444160964091883, 'JavaScript_cm': array([[3343,  174],
+       [ 199,  184]])}
+best_threshol:  0.5579
+best_f1 for:  0.5034
+best_recall:  0.4778
+best_precision:  0.532
+***** Test results *****
+  %s = %s test_accuracy 0.9044
+  %s = %s test_ap 0.5696
+  %s = %s test_cm [[3343  174]
+ [ 199  184]]
+  %s = %s test_f1 0.4966
+  %s = %s test_mcc 0.4442
+  %s = %s test_precision 0.514
+  %s = %s test_recall 0.4804
+  %s = %s test_threshold 0.5579
+3900 3900 3900 3900
+[2023-11-16 06:21:31,055] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
